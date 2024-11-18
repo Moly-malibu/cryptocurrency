@@ -4,4 +4,4 @@ requests
 pandas
 decorators
 dotenv
-plotly
+plotly.express
