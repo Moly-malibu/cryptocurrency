@@ -42,12 +42,6 @@ historical_df = pd.DataFrame(historical_data).melt(id_vars='Date', var_name='Cry
 line_fig = px.line(historical_df, x='Date', y='Price', color='Cryptocurrency', title='Historical Prices')
 st.plotly_chart(line_fig)
 
-
-import streamlit as st
-import requests
-import pandas as pd
-import plotly.express as px
-
 # Function to fetch all cryptocurrencies from Coinbase
 def fetch_all_cryptocurrencies():
     url = "https://api.pro.coinbase.com/currencies"
