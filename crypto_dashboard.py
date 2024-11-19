@@ -3,8 +3,18 @@ import pandas as pd
 import plotly.express as px
 import requests
 
+
 # Function to fetch cryptocurrency prices (mock data for demonstration)
 def fetch_crypto_data():
+    page_bg_img = '''
+            <style>
+            .stApp {
+            background-image: url("https://media.istockphoto.com/id/2159468266/photo/realistic-gold-dollar-coins-stack-isolated-white-background-concept-business-finance-saving.jpg?s=612x612&w=0&k=20&c=inbYSfbIyF_FYEYlIRsZXgempRgA6_Sq7nNS5NDXBas=");
+            background-size: cover;
+            }
+            </style>
+            '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
     data = {
         'Name': ['Bitcoin', 'Ethereum', 'Ripple', 'Litecoin'],
         'Price': [40000, 2500, 1.2, 150],
