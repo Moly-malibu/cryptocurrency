@@ -1,7 +1,5 @@
 streamlit
-cache_data
 requests
 pandas
 decorators
-dotenv
 plotly.express
